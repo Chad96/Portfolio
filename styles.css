@@ -104,8 +104,10 @@ nav a:hover {
 .icon {
   width: 30px;
   height: 30px;
-  margin: 1 10px; /* Add margin between icons */
+  margin: 2px 35px; /* Increase left and right margin */
+  margin-left: -1%;
 }
+
 /* Adjustments for the embedded map */
 .map-container {
   float: right; /* Align the map to the right */
