@@ -26,7 +26,7 @@ nav a:hover {
 
 /* Style for video container */
 .video-container {
-  width: calc(100% - 20px); /* Adjust as needed */
+  width: calc(100% - 20px);
   max-width: 100%;
   overflow: hidden;
 }
@@ -40,14 +40,13 @@ nav a:hover {
 }
 
 /* Style for bio section */
-/* Reduce space between bio section and video */
 .bio-section {
   display: flex;
   align-items: center;
-  margin-top: -15%; /* Change from margin-top: 5% to margin-top: 0 */
+  margin-top: -15%;
 }
 
-/* Adjust margins for video container */
+/*margins for video container */
 .video-container {
   width: calc(100% - 20px); /* Adjust as needed */
   max-width: 100%;
