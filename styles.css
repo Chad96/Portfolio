@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Style for video container */
+.video-container {
+  width: calc(100% - 20px); /* Adjust as needed */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Style for video */
+.resizable-video {
+  width: 90%;
+  height: 0%; /* Maintain aspect ratio */
+
+  margin-left: 5%;
+}
+
+/* Style for bio section */
+/* Reduce space between bio section and video */
+.bio-section {
+  display: flex;
+  align-items: center;
+  margin-top: -15%; /* Change from margin-top: 5% to margin-top: 0 */
+}
+
+/* Adjust margins for video container */
+.video-container {
+  width: calc(100% - 20px); /* Adjust as needed */
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: -20px; /* Add negative margin to bring the video up */
+}
+
+/* Adjust margins for video */
+.resizable-video {
+  width: 90%;
+  height: 0%; /* Maintain aspect ratio */
+  margin-left: 5%;
+}
+
+/* Style for bio text */
+.bio-text {
+  flex: 0.5;
+  padding: 50px;
+}
+
+/* Style for picture */
+.bio-picture {
+  flex: 1;
+  text-align: center;
+  margin-left: 20%;
+}
+
+/* Style for picture */
+.bio-picture img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 100%;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 20px 40px; /* Add padding to create space on the sides */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.icons {
+  margin-top: 0px; /*margin between address and icons */
+}
+
+.address {
+  text-align: center; /* Adjust alignment of the address */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 1 10px; /* Add margin between icons */
+}
+/* Adjustments for the embedded map */
+.map-container {
+  float: right; /* Align the map to the right */
+  margin-top: -5%; /*space between the icons and the map */
+  margin-left: 85%;
+  margin-bottom: 1%;
+}
