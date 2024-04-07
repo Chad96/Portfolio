@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #6e6e6e;
+  background-color: #474747;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -23,6 +23,7 @@ header {
 
 .about-content {
   text-align: center;
+  color: rgb(1, 20, 19);
 }
 
 .about-content img {
