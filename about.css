@@ -11,6 +11,10 @@ header {
   text-align: center;
 }
 
+.lead {
+  color: #007013;
+}
+
 .about {
   padding: 50px 0;
 }
@@ -30,7 +34,7 @@ header {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-bottom: 0px;
+  margin-bottom: 20px; /* Adjusted margin to create more space below the image */
 }
 
 .about-content h2 {
@@ -39,6 +43,19 @@ header {
 
 .about-content p {
   margin-bottom: 20px;
+}
+
+.education {
+  margin-bottom: 10px; /* Added margin bottom to create more space between education sections */
+  margin-top: 10%;
+}
+
+.mancosa {
+  margin-left: -85%;
+}
+
+.alx {
+  margin-right: -90%;
 }
 
 .social-links {
@@ -57,9 +74,10 @@ header {
   padding: 5px 10px;
   border: 1px solid #333;
   border-radius: 5px;
+  background-color: #608f6e; /* Change the background color to a brighter color */
 }
 
 .social-links li a:hover {
-  background-color: #1b2925;
-  color: #fff;
+  background-color: #3086c0;
+  color: #ffffff;
 }
