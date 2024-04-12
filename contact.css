@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #000000;
 }
 
 p {
@@ -36,68 +36,91 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.card {
-  width: 260px;
-  background-color: #aaa9a9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(100, 90, 90, 0.1);
-  margin-left: 82%;
-  opacity: 65%;
-}
 
-.chat-header {
-  background-color: #444444;
-  color: #fff;
-  padding: 10px;
-  font-size: 18px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.chat-window {
-  height: 150px; /* Adjusted height */
-}
-
-.message-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.chat-input {
+.form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 490px;
+  background-color: #c9c5c5;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 60%;
+  opacity: 80%;
+  margin-top: -10%;
+}
+
+.message {
+  color: rgba(0, 0, 0, 0.822);
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form label .input,
+.input01 {
+  width: calc(100% - 22px);
   padding: 10px;
-  border-top: 1px solid #ccc;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
 }
 
-.message-input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.send-button {
-  border: none;
-  outline: none;
-  background-color: #333;
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.send-button:hover {
-  background-color: rgb(44, 39, 39);
+.form label .input + span,
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   color: rgb(0, 0, 0);
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
 }
-.chat {
-  margin-left: 88%;
-  margin-bottom: -1%;
-  color: #170c35;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+.form label .input:placeholder-shown + span,
+.form label .input01:placeholder-shown + span {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span,
+.form label .input01:focus + span,
+.form label .input01:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span,
+.form label .input01:valid + span {
+  color: green;
+}
+
+/* New CSS for the submit button */
+.submit-button {
+  width: 100%; /* Make the button full width */
+  padding: 20%; /* Adjust padding to increase button size */
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
 }

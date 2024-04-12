@@ -2,11 +2,19 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("img/jj.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-  background-color: #474747;
-  color: #fff;
+  background-color: rgba(
+    71,
+    71,
+    71,
+    0.8
+  ); /* background color to semi-transparent */
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
@@ -34,7 +42,7 @@ header {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-bottom: 20px; /* Adjusted margin to create more space below the image */
+  margin-bottom: 20px; /*margin to create more space below the image */
 }
 
 .about-content h2 {
@@ -46,7 +54,7 @@ header {
 }
 
 .education {
-  margin-bottom: 10px; /* Added margin bottom to create more space between education sections */
+  margin-bottom: 10px; /*margin bottom to create more space between education sections */
   margin-top: 10%;
 }
 
@@ -74,7 +82,7 @@ header {
   padding: 5px 10px;
   border: 1px solid #333;
   border-radius: 5px;
-  background-color: #608f6e; /* Change the background color to a brighter color */
+  background-color: #608f6e;
 }
 
 .social-links li a:hover {
@@ -87,4 +95,32 @@ header {
 .languages {
   margin-left: -20%;
   margin-top: 7%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #020202;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #797979;
+}
+
+tr:nth-child(even) {
+  background-color: #cecaca; /* Change the background color of even rows */
+}
+
+td:nth-child(even) {
+  background-color: #aaa7a7; /* Change the background color of even columns */
 }
