@@ -117,3 +117,22 @@ a:hover {
 .submit-button:hover {
   background-color: #45a049; /* Darker green background color on hover */
 }
+.flex {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+}
+
+.flex label {
+  flex: 1; /* Equal width for both labels */
+}
+
+.form label .input,
+.input01 {
+  width: calc(100% - 22px);
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+  flex: 1; /* Equal width for both inputs */
+}
