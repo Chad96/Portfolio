@@ -2,7 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #818181;
+  background-image: url("img/jj.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -16,12 +19,12 @@ h1 {
 }
 
 p {
-  color: #666;
+  color: #313131;
 }
 
 ul {
   list-style: none;
-  padding: 1;
+  padding: 0;
 }
 
 ul li {
@@ -42,23 +45,14 @@ a:hover {
   flex-direction: column;
   gap: 20px;
   max-width: 490px;
-  background-color: #c9c5c5;
+  background-color: #b6b6b6;
   padding: 20px;
   border-radius: 10px;
-  position: relative;
-  margin-left: 60%;
-  opacity: 80%;
-  margin-top: -10%;
-}
-
-.message {
-  color: rgba(0, 0, 0, 0.822);
-  font-size: 14px;
+  opacity: 100%;
 }
 
 .flex {
   display: flex;
-  width: 100%;
   gap: 6px;
 }
 
@@ -109,10 +103,9 @@ a:hover {
   color: green;
 }
 
-/* New CSS for the submit button */
 .submit-button {
   width: 100%; /* Make the button full width */
-  padding: 20%; /* Adjust padding to increase button size */
+  padding: 20px; /* Adjust padding to increase button size */
   background-color: #4caf50; /* Green background color */
   color: white;
   border: none;
