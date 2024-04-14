@@ -11,6 +11,29 @@
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
+    <style>
+      body {
+        background-color: rgb(247, 247, 247);
+      }
+
+      #video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+    </style>
+
+    <video autoplay muted loop id="video-background">
+      <source src="your-video-file.mp4" type="video/mp4" />
+      <!-- Add additional sources for other video formats if needed -->
+      Your browser does not support the video tag.
+    </video>
+
     <header>
       <h1 class="text-center">About Me</h1>
     </header>

@@ -65,6 +65,7 @@ nav a:hover {
 .bio-text {
   flex: 0.5;
   padding: 50px;
+  color: #000000;
 }
 
 /* Style for picture */
