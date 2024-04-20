@@ -106,7 +106,7 @@ a:hover {
 .submit-button {
   width: 100%; /* Make the button full width */
   padding: 20px; /* Adjust padding to increase button size */
-  background-color: #4caf50; /* Green background color */
+  background-color: #5ebe62; /* Green background color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .submit-button:hover {
-  background-color: #45a049; /* Darker green background color on hover */
+  background-color: #3ab440; /* Darker green background color on hover */
 }
 .flex {
   display: flex;
