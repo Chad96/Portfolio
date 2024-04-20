@@ -13,24 +13,54 @@ contactDetails.innerHTML = `
   <li>Phone: ${phoneNumber}</li>
 `;
 
-// Define and include all projects in an array
-const projects = ["Project 1", "Project 2", "Project 3"];
+function handleFormSubmit(event) {
+  // Prevent the form from submitting normally
+  event.preventDefault();
 
-// Form submission handling
+  // Get the email and message inputs from the form
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  // Check if the email input is not empty and is valid
+  const isEmailValid =
+    emailInput.value.trim() !== "" && emailInput.validity.valid;
+
+  // Check if the message input is not empty
+  const isMessageValid = messageInput.value.trim() !== "";
+
+  // Check if both email and message are valid
+  const isFormValid = isEmailValid && isMessageValid;
+
+  if (isFormValid) {
+    // If the form is valid, send the form data to Formspree
+    const formData = new FormData(event.target);
+    fetch("https://formspree.io/f/xdoqyzgk", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // If the email is successfully sent, show a success message
+        if (data.ok) {
+          alert("Email successfully sent");
+        }
+      });
+  } else {
+    // If the form is invalid, show error messages
+    if (!isEmailValid) {
+      const emailSpan = document.getElementById("email-span");
+      emailSpan.classList.remove("hidden");
+    }
+    if (!isMessageValid) {
+      const messageSpan = document.getElementById("message-span");
+      messageSpan.classList.remove("hidden");
+    }
+  }
+}
+
+// Attach event listener to the form
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent default form submission
-
-  // Collect form data
-  const formData = {
-    firstName: document.getElementById("firstName").value,
-    lastName: document.getElementById("lastName").value,
-    email: document.getElementById("email").value,
-    contactNumber: document.getElementById("contactNumber").value,
-    message: document.getElementById("message").value,
-  };
-
-  // Send form data to Formspree API (not implemented here)
-  console.log("Form Data:", formData);
-  // Implement Formspree API integration here
-});
+contactForm.addEventListener("submit", handleFormSubmit);

@@ -45,7 +45,12 @@
         </li>
       </ul>
 
-      <form class="form" action="https://formspree.io/f/xdoqyzgk" method="POST">
+      <form
+        class="form"
+        method="POST"
+        action="https://formspree.io/f/xdoqyzgk"
+        id="contactForm"
+      >
         <div class="flex">
           <label>
             <input
@@ -55,7 +60,7 @@
               class="input"
               name="firstName"
             />
-            <span>first name</span>
+            <span>First Name</span>
           </label>
 
           <label>
@@ -66,7 +71,7 @@
               class="input"
               name="lastName"
             />
-            <span>last name</span>
+            <span>Last Name</span>
           </label>
         </div>
 
@@ -77,8 +82,9 @@
             type="email"
             class="input"
             name="email"
+            id="email"
           />
-          <span>email</span>
+          <span>Email</span>
         </label>
 
         <label>
@@ -89,7 +95,7 @@
             class="input"
             name="contactNumber"
           />
-          <span>contact number</span>
+          <span>Contact Number</span>
         </label>
         <label>
           <textarea
@@ -98,16 +104,16 @@
             placeholder=""
             class="input01"
             name="message"
+            id="message"
           ></textarea>
-          <span>message</span>
+          <span>Message</span>
         </label>
 
         <button type="submit" class="submit-button">
-          <span class="text">submit</span>
+          <span class="text">Submit</span>
         </button>
       </form>
     </div>
-
-    <script src="contact.js"></script>
+    <script src="contact.js" defer></script>
   </body>
 </html>
