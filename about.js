@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-md-6">
             <div class="mancosa">
               <h5>MANCOSA, Johannesburg – Information Technology</h5>
-              <p>NQF level 5 – Cum Laude</p>
+              <p>NQF level 5 – graduated with distinction.</p>
               <p>SAQA ID: 93709</p>
               <h4>Modules:</h4>
               <ul>

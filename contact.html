@@ -12,14 +12,13 @@
       <p>
         Please feel free to reach out to us using the contact details below:
       </p>
-      <ul class="contact-details">
-        <li>Address: 748 Park Street Arcadia, Pretoria</li>
-        <li>Email Address: chadrackndalamba@gmail.com</li>
-        <li>Phone: 078-129-1867</li>
+      <ul class="contact-details" id="contactDetails">
+        <!-- Contact details will be rendered here dynamically -->
       </ul>
 
       <h2>Connect with us on social media:</h2>
       <ul class="social-media">
+        <!-- Social media links will remain static -->
         <li>
           <a
             href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/"
@@ -46,26 +45,50 @@
         </li>
       </ul>
 
-      <form class="form">
+      <form class="form" action="https://formspree.io/f/xdoqyzgk" method="POST">
         <div class="flex">
           <label>
-            <input required="" placeholder="" type="text" class="input" />
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              name="firstName"
+            />
             <span>first name</span>
           </label>
 
           <label>
-            <input required="" placeholder="" type="text" class="input" />
+            <input
+              required=""
+              placeholder=""
+              type="text"
+              class="input"
+              name="lastName"
+            />
             <span>last name</span>
           </label>
         </div>
 
         <label>
-          <input required="" placeholder="" type="email" class="input" />
+          <input
+            required=""
+            placeholder=""
+            type="email"
+            class="input"
+            name="email"
+          />
           <span>email</span>
         </label>
 
         <label>
-          <input required="" type="tel" placeholder="" class="input" />
+          <input
+            required=""
+            type="tel"
+            placeholder=""
+            class="input"
+            name="contactNumber"
+          />
           <span>contact number</span>
         </label>
         <label>
@@ -74,6 +97,7 @@
             rows="3"
             placeholder=""
             class="input01"
+            name="message"
           ></textarea>
           <span>message</span>
         </label>
@@ -83,5 +107,7 @@
         </button>
       </form>
     </div>
+
+    <script src="contact.js"></script>
   </body>
 </html>
