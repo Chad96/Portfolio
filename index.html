@@ -3,124 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chad's Portfolio</title>
+    <title>Navigation Bar</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <style>
-      body {
-        background-image: url("img/"); /*file extension */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: rgb(247, 247, 247);
-      }
-    </style>
   </head>
   <body>
     <nav>
-      <a href="index.html">
-        <!--when I click the logo it loads back to home page-->
-        <img src="img/logo/nice.jpg" alt="Logo" class="logo" />
-      </a>
-      <div>
-        <a href="index.html" onclick="window.scrollTo(0, 0);">Home</a>
-        <!-- Link to return to the top of the page -->
-        <a href="about.html" target="_blank">About me</a>
-        <!-- Link to the About Me page opening in a new tab -->
-        <a href="contact.html" target="_blank">Contact Us</a>
-        <!-- Link to the Contact Us page opening in a new tab -->
+      <div class="nav-links nav-links-left">
+        <div class="logo"><img src="images/logo.svg" alt="" /></div>
+        <div class="nav-link-container">
+          <div class="dropdown">
+            <a href="#" class="dropbtn active" onclick="toggleDropdown(this)"
+              >Features <i class="arrow-icon"></i
+            ></a>
+            <!-- Added onclick event to toggle dropdown -->
+            <div class="dropdown-content">
+              <a href="#"
+                ><img src="images/icon-todo.svg" alt="" /> Todo List</a
+              >
+              <a href="#"
+                ><img src="images/icon-calendar.svg" alt="" /> Calendar</a
+              >
+              <a href="#"
+                ><img src="images/icon-reminders.svg" alt="" /> Reminders</a
+              >
+              <a href="#"
+                ><img src="images/icon-planning.svg" alt="" /> Planning</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="nav-link-container">
+          <div class="dropdown">
+            <a href="#" class="dropbtn" onclick="toggleDropdown(this)"
+              >Company <i class="arrow-icon"></i
+            ></a>
+            <!-- Added onclick event to toggle dropdown -->
+            <div class="dropdown-content company-dropdown">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link-container">
+          <a href="#" class="nav-link">Careers</a>
+        </div>
+        <div class="nav-link-container">
+          <a href="#" class="nav-link">About</a>
+        </div>
+      </div>
+      <div class="nav-links nav-links-right">
+        <a href="#" class="login-btn">Login</a>
+        <a href="#" class="register-btn">Register</a>
       </div>
     </nav>
-
-    <br />
-    <!-- Video (used inline frame to embed the video)-->
-    <div
-      style="
-        position: relative;
-        width: 95%;
-        height: 0px;
-        padding-bottom: 56.25%;
-        margin-left: -1%;
-      "
-    >
-      <iframe
-        allow="fullscreen"
-        allowfullscreen
-        height="100%"
-        src="vid/A day in a programmer's life - Animation.mp4"
-        width="100%"
-        style="
-          border: none;
-          width: 100%;
-          height: 60%;
-          position: absolute;
-          left: 4%; /* Set to 0 to touch the left side */
-
-          top: 0;
-          overflow: hidden;
-        "
-      ></iframe>
-    </div>
-    <div class="bio-section">
-      <div class="bio-text">
-        <h2>Chadrack Ndalamba</h2>
+    <!-- First Card -->
+    <div class="card">
+      <div class="description">
+        <h1>Make <br />remote work</h1>
+        <br />
         <p>
-          <b>Hello -</b> my name is Chadrack Ndalamba. I am a young,
-          professional, hardworking individual who is always motivated to show
-          the best version of myself.
-          <br />
-          <br />
-          I am an aspiring full-stack software engineer and a quality-conscious
-          person with top-notch teamwork and customer skills. I have excellent
-          communication skills, very good at multitasking, and I adhere to
-          deadlines.
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and<br />
+          watch productivity soar.
         </p>
+        <br />
+        <a href="#" class="learn-btn"><b>Learn more</b> </a>
+        <!-- Moved the button here -->
       </div>
-      <br />
-
-      <div class="bio-picture">
-        <img src="img/round.jpg" alt="Profile Picture" />
-      </div>
+      <img src="images/image-hero-desktop.png" alt="Image" />
     </div>
-    <br />
-    <footer class="footer">
-      <div class="container">
-        <div class="address">
-          <!-- Your address goes here -->
-          <p>
-            748 Park Street Arcadia, Pretoria, South Africa Call: 078 129 1867
-          </p>
-        </div>
-
-        <div class="icons">
-          <a href="https://www.facebook.com/chad.rsa.1/" target="_blank">
-            <img src="img/icons/fb1.png" alt="Facebook" class="icon" />
-          </a>
-          <a href="https://www.instagram.com/chad.rsa/?hl=en" target="_blank">
-            <img src="img/icons/insta.svg" alt="Instagram" class="icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/chadrack-ndalamba-442139137/"
-            target="_blank"
-          >
-            <img src="img/icons/link.png" alt="LinkedIn" class="icon" />
-          </a>
-          <a href="https://github.com/Chad96" target="_blank">
-            <img src="img/icons/git.png" alt="GitHub" class="icon" />
-          </a>
-        </div>
-        <!-- Embedding the map -->
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.6289935842988!2d28.214923174718265!3d-25.749779945619867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561f2a847af15%3A0x5f6a0074c7f5f373!2sShangri-la%20Flats!5e0!3m2!1sen!2sza!4v1712357755277!5m2!1sen!2sza"
-            width="195"
-            height="90"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+    <!-- Footer icons -->
+    <footer>
+      <div class="icon-container">
+        <img src="images/client-databiz.svg" alt="Icon 1" />
+        <img src="images/client-audiophile.svg" alt="Icon 2" />
+        <img src="images/client-meet.svg" alt="Icon 3" />
+        <img src="images/client-maker.svg" alt="Icon 4" />
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
