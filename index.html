@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codetribe</title>
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +25,7 @@
         <div class="logo"><img src="images/logo.svg" alt="" /></div>
         <div class="nav-link-container">
           <div class="dropdown">
-            <a href="#" class="dropbtn active" onclick="toggleDropdown(this)"
+            <a href="#" class="dropbtn active"
               >Features <i class="arrow-icon"></i
             ></a>
             <!-- Added onclick event to toggle dropdown -->
@@ -40,9 +47,7 @@
         </div>
         <div class="nav-link-container">
           <div class="dropdown">
-            <a href="#" class="dropbtn" onclick="toggleDropdown(this)"
-              >Company <i class="arrow-icon"></i
-            ></a>
+            <a href="#" class="dropbtn">Company <i class="arrow-icon"></i></a>
             <!-- Added onclick event to toggle dropdown -->
             <div class="dropdown-content company-dropdown">
               <a href="#">History</a>
